@@ -1,55 +1,38 @@
-# learn-svelte-in-a-month
+# create-svelte
 
-## Week 1: Getting Started and Basics
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-### Day 1-2: Introduction to Svelte
-- Read the official [Svelte documentation](https://svelte.dev/docs) to understand the core concepts.
-- Install Svelte using npm and create your first Svelte project.
+## Creating a project
 
-### Day 3-4: Components and Props
-- Learn about components in Svelte and how to create and use them.
-- Understand the concept of props and how to pass data between components.
+If you're seeing this, you've probably already done this step. Congrats!
 
-### Day 5-6: State Management in Svelte
-- Explore Svelte's reactivity system.
-- Understand how to manage state in Svelte components.
+```bash
+# create a new project in the current directory
+npm create svelte@latest
 
-### Day 7: Svelte Events
-- Learn about handling events in Svelte components.
-- Understand how to create custom events.
+# create a new project in my-app
+npm create svelte@latest my-app
+```
 
-## Week 2: Advanced Concepts
+## Developing
 
-### Day 8-9: Conditional Rendering and Loops
-- Explore conditional rendering and how to use `if` statements.
-- Learn how to iterate through lists using loops.
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-### Day 10-11: Svelte Directives
-- Understand Svelte directives such as `bind`, `on`, and `transition`.
-- Explore how to use directives to manipulate the DOM.
+```bash
+npm run dev
 
-### Day 12-13: Routing in Svelte
-- Learn about client-side routing in Svelte using a library like `svelte-routing`.
-- Create a multi-page Svelte application.
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
-### Day 14: Svelte Stores
-- Dive into Svelte stores for more advanced state management.
-- Understand how to use stores to share state between components.
+## Building
 
-## Week 3: Styling, Animation, and Deployment
+To create a production version of your app:
 
-### Day 15-16: Styling in Svelte
-- Explore different ways to style Svelte components.
-- Understand the use of scoped styles.
+```bash
+npm run build
+```
 
-### Day 17-18: Animations in Svelte
-- Learn how to add animations to your Svelte components.
-- Explore the `svelte/animate` module.
+You can preview the production build with `npm run preview`.
 
-### Day 19-20: Testing Svelte Applications
-- Learn about testing Svelte components.
-- Explore testing libraries like `@testing-library/svelte`.
-
-### Day 21: Deployment and Optimization
-- Understand how to build and deploy a Svelte application.
-- Explore optimization techniques for Svelte applications.
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
