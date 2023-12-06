@@ -1,5 +1,4 @@
 # learn-svelte-in-a-month
-# Learning Svelte: A 3-Week Journey
 
 ## Week 1: Getting Started and Basics
 
