@@ -1,8 +1,11 @@
 <script>
-    // import "../../static/css/style.css"
+    import "../style.css"
 </script>
 
-<a href="/">Home</a>
+<nav>
+    <div><a href="/">Home</a></div>
+    <div><a href="/about">About</a></div>
+</nav>
 
 <h1>Learn Svelte</h1>
 

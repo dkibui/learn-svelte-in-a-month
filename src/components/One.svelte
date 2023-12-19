@@ -1,14 +1,9 @@
 <script>
-    let arr = [0, 1];
-
-    function handleClick() {
-        // this method call does not trigger an update
-        arr.push(2);
-        // this assignment will trigger an update
-        // if the markup references `arr`
-        arr = arr;
-    }
+    export let user_id = 'ID';
+    export let user_name = 'no-name';
 </script>
-
-<h2>{arr}</h2>
-<button on:click={handleClick} class="">Push 2</button>
+<div>
+    <h2> Props implementation </h2>
+    <span>{user_id}</span>
+    <h3>{user_name}</h3>
+</div>
