@@ -7,7 +7,7 @@
     <div><a href="/about">About</a></div>
 </nav>
 
-<h1>Learn Svelte</h1>
+<h1>Learning Svelte</h1>
 
 <slot/>
 

@@ -1,7 +1,29 @@
 <script>
-	import Card from "../components/One.svelte";
+    import TodoList from "$lib/TodoList.svelte";
+
+    import {v4 as uuid} from "uuid";
+
+    const todos = [
+        {
+            id: uuid(),
+            title: "Todos item one",
+            completed: true
+        },
+        {
+            id: uuid(),
+            title: "Todos item two",
+            completed: false
+        },
+        {
+            id: uuid(),
+            title: "Todos item three",
+            completed: true
+        },        {
+            id: uuid(),
+            title: "Todos item four thousand shillings!",
+            completed: true
+        },
+    ]
 </script>
 
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-
-<Card user_id="12345" user_name="educative"/>
+<TodoList todos={todos}></TodoList>
