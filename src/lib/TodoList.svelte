@@ -1,12 +1,18 @@
 <script>
     import Button from "$lib/Button.svelte";
+    import {v4 as uuid} from "uuid";
 
     export let todos = [];
     let inputText = "";
 
     const handleAddTodo = () => {
         if (!inputText) return;
-        console.log(inputText)
+        todos.push({
+            id: uuid(),
+            title: inputText,
+            completed: false
+        })
+        todos = todos;
     }
 </script>
 
