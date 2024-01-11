@@ -7,12 +7,12 @@
 
     const handleAddTodo = () => {
         if (!inputText) return;
-        todos.push({
+        todos = [...todos, {
             id: uuid(),
             title: inputText,
             completed: false
-        })
-        todos = todos;
+        }]
+        inputText = "";
     }
 </script>
 
